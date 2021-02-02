@@ -6,8 +6,8 @@ $password = $_POST['password'];
 if ($user === $username && $pwd === $password) {
     session_start();
     $_SESSION['username'] = $_POST['username'];
-    header('Location: localhost:3000/panel.php');
+    header('Location: http://localhost/PHP-Server-Environment/panel.php');
 } else {
-    header('Location: localhost:3000/index.php');
+    header('Location: http://localhost/PHP-Server-Environment/index.php');
 }
 

@@ -2,7 +2,7 @@
 session_start();
 
 if(isset($_SESSION['username'])) {
-    header('Location: localhost:3000/panel.php');
+    header('Location: http://localhost/PHP-Server-Environment/panel.php');
 }
 
 
@@ -15,7 +15,7 @@ if(isset($_SESSION['username'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
 </head>
-<form action="localhost:3000/validate.php" method="post">
+<form action="http://localhost/PHP-Server-Environment/validate.php" method="post">
     <label>User Name: <input type="text" name="username"></label>
     <label>Password: <input type="password" name="password"></label>
     <input type="submit" value="Login">
